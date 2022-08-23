@@ -1,0 +1,302 @@
+.pawn-introduce {
+    background: $c-e9f5fb;
+    margin: 0 0 30px;
+
+    .pawn-introduce-wrap {
+        padding: toRem(30) 0;
+
+        .pawn-introduce-inner {
+            margin-bottom: toRem(40);
+
+            @include bp-mobile {
+                display: none !important;
+            }
+
+            .pawn-introduce-btn {
+                background: $c-50b848 ;
+                margin-right: toRem(20);
+                padding: toRem(8) toRem(8);
+
+                .pawn-introduce-btn-link {
+                    color: $c-ffffff;
+                    font-size: toRem(16);
+                    font-weight: 700;
+                    padding: toRem(4) toRem(12);
+                }
+            }
+        }
+
+        .pawn-introduce-content {
+
+            .pawn-introduce-content-wrap {
+                padding-right: 10px;
+
+                .pawn-introduce-title {
+                    text-align: center;
+                    font-size: toRem(35);
+                    color: $c-000000;
+                    font-weight: 700;
+                    margin-bottom: toRem(16);
+                }
+
+                .pawn-introduce-text {
+                    font-size: toRem(20);
+                    font-weight: 400;
+                    color: $c-000000;
+                    margin-bottom: toRem(24);
+
+                    p {
+                        margin-bottom: toRem(20);
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+.asset {
+    padding: 30px 0;
+
+    .asset-heaading {
+        text-align: center;
+        font-size: toRem(35);
+        color: $c-000000;
+        font-weight: 700;
+        margin-bottom: toRem(10);
+    }
+
+    .asset-list {
+        .asset-item {
+            background-color: #f5f5f5;
+            width: 100%;
+            border-radius: 10px;
+            padding: 0 toRem(15) toRem(20);
+            margin: 0 0;
+            text-align: center;
+
+            .asset-img-wrap {
+                .asset-img {
+                    padding: toRem(16);
+                    width: toRem(120);
+                    height: toRem(125);
+                }
+
+
+            }
+
+            .asset-content {
+                font-size: toRem(22);
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.process {
+    background-color: $c-e9f5fb;
+    padding: 24px 0;
+
+    .process-inner {
+        margin-bottom: 30px;
+
+        .process-header {
+            text-align: center;
+            font-size: toRem(36);
+            color: $c-000000;
+            font-weight: 700;
+            margin-bottom: toRem(16);
+        }
+
+        .process-text {
+            text-align: center;
+            font-size: toRem(20);
+            color: $c-0A0A0A;
+            font-weight: 400;
+        }
+
+
+
+
+    }
+
+    .process-list {
+
+        .process-item {
+            padding: 0 15px 20px;
+
+            .process-img {
+                display: inline-block;
+                border: 1px solid $c-50b848;
+                border-radius: 50%;
+                width: 80px;
+                height: 80px;
+                text-align: center;
+                margin-bottom: 16px;
+
+                svg path {
+                    fill: $c-50b848;
+                }
+
+                & :hover {
+                    background: $c-50b848;
+                    border-radius: 50%;
+                    border: none;
+
+                    svg path {
+                        border: none;
+                        fill: white;
+                    }
+                }
+            }
+
+            .process-img-wrap {
+                text-align: center;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+        }
+
+        .process-content {
+            font-size: toRem(24);
+            font-weight: 700;
+            word-spacing: 2px;
+            color: $c-ff0000;
+            margin-bottom: 8px;
+        }
+
+        .process-content-text {
+            font-size: toRem(20);
+            color: $c-0A0A0A;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+    }
+}
+
+.text {
+    padding: toRem(30) 0 toRem(50);
+
+    .text-content {
+        font-size: toRem(20);
+        font-weight: 700;
+
+        span {
+            color: $c-ff0000;
+        }
+    }
+}
+
+.assess-client-slide-outside {
+    position: relative;
+    padding-top: 35px;
+
+    &::after {
+        content: "";
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 3px;
+        width: 6%;
+        background-color: #d1dce1;
+        margin: 0 auto;
+        position: absolute;
+    }
+}
+
+.assess {
+    background-color: $c-e9f5fb;
+    padding: 30px 0;
+
+    .assess-header {
+        text-align: center;
+        font-size: toRem(30);
+        color: $c-000000;
+        font-weight: 700;
+        margin-bottom: toRem(30);
+
+        span {
+            color: $c-50b848;
+        }
+    }
+
+    .assess-pagination .swiper-pagination-bullet {
+        width: 50px;
+        background: transparent;
+        border: 2px solid $c-000000;
+        border-radius: 2px;
+
+        &.swiper-pagination-bullet-active {
+            border: 4px solid $c-000000;
+            background: #000000;
+        }
+    }
+
+    .assess-client-item {
+        &:hover {
+            cursor: grab;
+        }
+
+        &:focus {
+            cursor: grabbing;
+        }
+
+        .assess-client-item-warp {
+            padding: 0 15px 30px;
+
+            .assess-client-item-img {
+                width: 120px;
+                height: 120px;
+                display: flex;
+                flex-shrink: 0;
+                border-radius: 50%;
+                overflow: hidden;
+
+            }
+
+            .assess-client-item-content {
+                padding-left: 16px;
+
+                .assess-client-item-icon {
+                    margin-bottom: 4px;
+
+                    & i {
+                        color: $c-d26e4b;
+                    }
+                }
+
+                .assess-client-item-text {
+                    font-size: toRem(21);
+                    color: $c-000000;
+                    font-style: italic;
+                    font-weight: 400;
+                    margin-bottom: 15px;
+
+                    & span {
+                        color: $c-50b848;
+                    }
+                }
+
+                .assess-client-item-infor {
+                    font-size: toRem(21);
+                    color: $c-000000;
+                    font-weight: 400;
+
+                    .assess-item-infor-name {
+                        font-weight: 700;
+                        margin-right: 4px;
+                    }
+
+                    .assess-item-infor-icon {
+                        margin-right: 4px;
+                    }
+                }
+            }
+        }
+
+    }
+}

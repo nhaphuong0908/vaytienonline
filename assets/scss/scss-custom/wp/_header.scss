@@ -1,0 +1,214 @@
+.header {
+    .header-navbar {
+        background: $c-f7f7f7;
+
+        .navbar-list {
+            padding: 4px 0;
+            align-items: center;
+
+            .navbar-item {
+                margin-left: 8px;
+
+                .navbar-seperate {
+                    color: $c-999999;
+                    font-weight: 300;
+                }
+
+                .navbar-text {
+                    color: $c-666666;
+                    font-size: toRem(16);
+
+                }
+
+                i.navbar-icon {
+                    color: $c-999999;
+                }
+
+                .search {
+                    background: $c-50b848;
+                    border-radius: 5px;
+                    width: 36px;
+                    height: 32px;
+                    margin: 0 8px;
+                    text-align: center;
+                    line-height: 32px;
+
+                    i {
+                        color: $c-ffffff;
+                        font-size: toRem(20);
+                    }
+                }
+
+                .item-link {
+
+                    .search-icon {
+                        color: $c-ffffff;
+                        font-size: toRem(20);
+                    }
+
+                    .navbar-icon {
+                        color: $c-999999;
+                        font-size: toRem(19);
+                    }
+
+                }
+
+            }
+
+        }
+    }
+
+    .header-heading {
+        box-shadow: 0px 5px 7px -1px rgba(184, 181, 181, 0.75);
+        -webkit-box-shadow: 0px 5px 7px -1px rgba(184, 181, 181, 0.75);
+        -moz-box-shadow: 0px 5px 7px -1px rgba(184, 181, 181, 0.75);
+        z-index: 888;
+
+        .heading-wrap {
+            padding: 10px 0;
+
+            .mini-menu {
+                i {
+                    @include padding_all(14);
+                    background-color: $c-50b848;
+                    border-radius: toRem(6);
+                    color: white;
+                    font-size: toRem(24);
+                }
+            }
+
+            .heading-logo {
+                padding: 0 0;
+
+                .logo-img {
+                    height: 56px;
+                }
+            }
+
+            .heading-menu {
+                align-items: center;
+
+                .heading-menu-list {
+
+                    .heading-menu-item {
+                        margin: 0 8px;
+                        position: relative;
+                        align-items: center;
+
+
+
+                        &:hover .menu-link {
+                            color: $c-50b848;
+                            cursor: pointer;
+                            transition: all ease-in-out .3s;
+                        }
+
+                        &:hover .menu-icon i {
+                            color: $c-50b848;
+                            cursor: pointer;
+                            transition: all ease-in-out .3s;
+                        }
+
+                        .menu-link {
+                            font-size: toRem(16);
+                            color: $c-000000 ;
+                            font-weight: 700;
+                        }
+
+                        .menu-icon i {
+                            font-size: toRem(14);
+                            margin: 0 2px 0 4px;
+
+                            &:hover {
+                                color: $c-50b848;
+                                cursor: pointer;
+                            }
+                        }
+
+                        .menu-knowledge {
+                            display: none;
+                            position: absolute;
+                            top: 140%;
+                            left: 0;
+                            white-space: nowrap;
+                            background-color: $c-ffffff ;
+                            border: 1px solid $c-cfcfcf;
+                            box-shadow: 4px 4px 18px 2px $c-cfcfcf;
+                            z-index: 999;
+
+                            .menu-knowledge-wrap {
+                                padding: 16px 24px;
+
+                                .menu-knowledge-list {
+                                    padding: 8px 0;
+                                    border-bottom: 1px solid $c-cfcfcf;
+
+                                    &:last-child {
+                                        border: none;
+                                    }
+
+                                    .menu-knowledge-link {
+                                        color: $c-999999;
+
+                                        &:hover {
+                                            color: $c-313131 ;
+                                        }
+                                    }
+
+                                }
+                            }
+
+                        }
+
+                    }
+
+                    .menu-item-knowledge {
+                        position: relative;
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            bottom: -50%;
+                            right: 50%;
+                            z-index: 9999;
+                            border-width: 10px 10px;
+                            border-style: solid;
+                            border-color: transparent transparent $c-ffffff transparent;
+                            cursor: pointer;
+                        }
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            bottom: -50%;
+                            right: 0;
+                            z-index: 2;
+                            width: 100%;
+                            height: 16px;
+                            cursor: pointer;
+                        }
+
+                        &:hover .menu-knowledge {
+                            display: block;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .heading-register {
+            .heading-register-wrap {
+                background-color: $c-50b848;
+                border-radius: 5px;
+                padding: 8px 4px;
+                text-align: center;
+
+                .heading-register-link {
+                    font-size: toRem(19);
+                    color: $c-ffffff;
+                }
+            }
+        }
+    }
+}

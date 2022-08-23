@@ -1,0 +1,310 @@
+.unsecuredloan-introduce {
+    background: $c-e9f5fb;
+    padding: 0 0 30px;
+
+    .unsecuredloan-introduce-wrap {
+        padding: toRem(30) 0;
+
+        .unsecuredloan-introduce-inner {
+            margin-bottom: toRem(40);
+
+            @include bp-mobile {
+                display: none !important;
+            }
+
+            .unsecuredloan-introduce-btn {
+                background: $c-50b848 ;
+                padding: toRem(8) toRem(8);
+                text-align: center;
+
+
+                .unsecuredloan-introduce-btn-link {
+                    color: $c-ffffff;
+                    font-size: toRem(16);
+                    font-weight: 700;
+                    padding: toRem(4) toRem(12);
+                }
+            }
+        }
+
+        .unsecuredloan-introduce-content {
+
+            .unsecuredloan-introduce-content-wrap {
+                padding-right: 10px;
+
+                .unsecuredloan-introduce-title {
+                    text-align: center;
+                    font-size: toRem(35);
+                    color: $c-000000;
+                    font-weight: 700;
+                    margin-bottom: toRem(16);
+                }
+
+                .unsecuredloan-introduce-text {
+                    font-size: toRem(20);
+                    font-weight: 400;
+                    color: $c-000000;
+                    margin-bottom: toRem(24);
+
+                    p {
+                        margin-bottom: toRem(20);
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+.forte {
+    padding: 24px 0;
+
+    .forte-inner {
+        margin-bottom: 30px;
+
+        .forte-header {
+            text-align: center;
+            font-size: toRem(36);
+            color: $c-000000;
+            font-weight: 700;
+            margin-bottom: toRem(16);
+        }
+
+    }
+
+    .forte-list {
+
+        .forte-item {
+            padding: 0 15px 20px;
+
+            .forte-img {
+                display: inline-block;
+                border: 1px solid $c-50b848;
+                border-radius: 50%;
+                width: 70px;
+                height: 70px;
+                text-align: center;
+                margin-bottom: 16px;
+
+                & :hover {
+                    background: $c-50b848;
+                    border-radius: 50%;
+                    border: none;
+
+                    svg path {
+                        border: none;
+                        fill: white;
+                    }
+                }
+            }
+
+            .forte-img-wrap {
+                text-align: center;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            }
+        }
+
+        .forte-content {
+            font-size: toRem(20);
+            font-weight: 700;
+            word-spacing: 2px;
+            color: $c-000000;
+            margin-bottom: 8px;
+        }
+
+        .forte-content-text {
+            font-size: toRem(20);
+            color: $c-0A0A0A;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+    }
+}
+
+.product-unsecuredloan {
+    padding: toRem(70) 0;
+
+    .product-unsecuredloan-wrap {
+        .product-unsecuredloan-inner {
+            padding: 0 toRem(16) toRem(30);
+
+            .product-unsecuredloan-heading {
+                font-size: toRem(20);
+                color: $c-000000;
+                font-weight: 700;
+                margin-bottom: toRem(30);
+
+                span {
+                    color: #f00;
+
+                    &.quantity {
+                        font-size: 120%;
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+.process-procedure {
+    background-color: $c-e9f5fb;
+    padding: 0 0 toRem(30);
+
+    .process-procedure-list {
+        padding: toRem(20) 0 toRem(30);
+
+        .process-procedure-inner {
+            .process-procedure-heading {
+                text-align: center;
+                font-size: toRem(36);
+                color: $c-000000;
+                font-weight: 700;
+                margin-bottom: toRem(20);
+                padding-top: toRem(20);
+            }
+
+            .process-procedure-title {
+                font-size: toRem(20);
+                font-weight: 400;
+                color: $c-0A0A0A;
+            }
+
+            .process-procedure-content {
+                margin: toRem(15) 0;
+
+                .process-procedure-icon {
+                    margin-right: toRem(8);
+
+                    i {
+                        font-size: toRem(20);
+                        font-weight: 700;
+                    }
+                }
+
+                .process-procedure-text {
+                    font-size: toRem(20);
+                    font-weight: 400;
+                    color: $c-0A0A0A;
+                }
+            }
+        }
+
+    }
+}
+
+.unsecuredloan-experience-slide-outside {
+    position: relative;
+    padding-top: 35px;
+
+    &::after {
+        content: "";
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 3px;
+        width: 6%;
+        background-color: #d1dce1;
+        margin: 0 auto;
+        position: absolute;
+    }
+}
+
+.unsecuredloan-experience {
+    padding: 30px 0;
+
+
+
+    .unsecuredloan-experience-header {
+        text-align: center;
+        font-size: toRem(30);
+        color: $c-000000;
+        font-weight: 700;
+        margin-bottom: toRem(30);
+
+        span {
+            color: $c-50b848;
+        }
+    }
+
+    .unsecuredloan-experience-pagination .swiper-pagination-bullet {
+        width: 50px;
+        background: transparent;
+        border: 2px solid $c-000000;
+        border-radius: 2px;
+
+        &.swiper-pagination-bullet-active {
+            border: 4px solid $c-000000;
+        }
+    }
+
+    .unsecuredloan-experience-item {
+        &:hover {
+            cursor: grab;
+        }
+
+        &:focus {
+            cursor: grabbing;
+        }
+
+        .unsecuredloan-experience-item-warp {
+            padding: 0 15px 30px;
+
+            .unsecuredloan-experience-item-img {
+                width: 120px;
+                height: 120px;
+                display: flex;
+                flex-shrink: 0;
+                border-radius: 50%;
+                overflow: hidden;
+
+            }
+
+            .unsecuredloan-experience-item-content {
+                padding-left: 16px;
+
+                .unsecuredloan-experience-item-icon {
+                    margin-bottom: 4px;
+
+                    & i {
+                        color: $c-d26e4b;
+                    }
+                }
+
+                .unsecuredloan-experience-item-text {
+                    font-size: toRem(21);
+                    color: $c-000000;
+                    font-style: italic;
+                    font-weight: 400;
+                    margin-bottom: 15px;
+
+                    & span {
+                        color: $c-50b848;
+                    }
+                }
+
+                .unsecuredloan-experience-item-infor {
+                    font-size: toRem(21);
+                    color: $c-000000;
+                    font-weight: 400;
+
+                    .unsecuredloan-experience-item-infor-name {
+                        font-weight: 700;
+                        margin-right: 4px;
+                    }
+
+                    .unsecuredloan-experience-item-infor-icon {
+                        margin-right: 4px;
+                    }
+                }
+            }
+        }
+
+    }
+}

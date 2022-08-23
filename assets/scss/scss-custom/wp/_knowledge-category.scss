@@ -1,0 +1,217 @@
+.knowledge-category-heading {
+    font-size: toRem(24);
+    font-weight: 700;
+    color: $c-000000;
+    margin: toRem(30) 0 toRem(50);
+}
+
+.borrow-item {
+    position: relative;
+    // margin-top: 66px;e làm nay mà hog dc nè
+    // transition: all 0.3s ease-in-out;
+
+    // &:hover {
+    //     transform: translateY(-2%);
+
+    //     .borrow-item-inner {
+    //         box-shadow: 0px 4px toRem(65) -4px rgba(0, 0, 0, 0.5);
+    //         -webkit-box-shadow: 0px 4px toRem(65) -4px rgba(0, 0, 0, 0.5);
+    //         -moz-box-shadow: 0px 4px toRem(65) -4px rgba(0, 0, 0, 0.5);
+    //     }
+
+    //     .product-item-inner {
+    //         box-shadow: 0px 4px toRem(65) -4px rgba(0, 0, 0, 0.5);
+    //         -webkit-box-shadow: 0px 4px toRem(65) -4px rgba(0, 0, 0, 0.5);
+    //         -moz-box-shadow: 0px 4px toRem(65) -4px rgba(0, 0, 0, 0.5);
+    //     }
+
+}
+
+.knowledge-category-newfeed {
+    padding: 0 toRem(16);
+}
+
+.knowledge-category-item-inner {
+    position: relative;
+    background: $c-ffffff;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0px 4px 13px -4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 4px 13px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 4px 13px -4px rgba(0, 0, 0, 0.75);
+
+    .knowledge-category-item-img img {
+        width: 100%;
+    }
+
+    .knowledge-category-item-content {
+        padding: toRem(14) toRem(14) toRem(24);
+
+        .knowledge-category-item-title {
+            font-size: toRem(24);
+            margin: 0 0 toRem(12);
+            font-weight: 700;
+        }
+
+        .knowledge-category-item-text {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-size: toRem(16);
+        }
+    }
+
+
+
+
+
+}
+
+.post-sidebar-wrap {
+    border-left: 1px solid #ececec;
+    padding: 0 0 toRem(40) toRem(34);
+
+    @include bp-tablet {
+        border: none;
+    }
+
+    .sidebar-haeding {
+        position: relative;
+        font-size: toRem(20);
+        font-weight: 700;
+        margin-bottom: toRem(20);
+        text-transform: uppercase;
+        padding-bottom: toRem(20);
+
+        &::after {
+            content: "";
+            left: 0;
+            right: 0;
+            top: 100%;
+            height: 3px;
+            width: 100%;
+            max-width: toRem(37);
+            background-color: #d1dce1;
+            margin: 0;
+            position: absolute;
+        }
+    }
+
+    .sidebar-list {
+        margin: toRem(20) 0 toRem(40);
+    }
+
+    .sidebar-item {
+        padding: toRem(10) 0;
+        border-bottom: 1px solid #ececec;
+
+        &.sidebar-item-active {
+
+            .sidebar-iten-link {
+                font-weight: 700;
+            }
+
+        }
+
+        &:last-child {
+            border: none;
+        }
+
+        .sidebar-iten-link {
+            width: 100%;
+            font-size: toRem(20);
+            font-weight: 400;
+            color: $c-000000;
+
+            span {
+                font-weight: 500;
+            }
+
+        }
+    }
+
+}
+
+.see-sidebar-wrap {
+    margin: toRem(30) 0 toRem(50);
+
+    .see-sidebar-item {
+        padding: toRem(14) 0;
+        border-bottom: 1px solid #ececec;
+
+        &:last-child {
+            border: none;
+        }
+
+        .see-sidebar-img {
+            margin-right: toRem(20);
+
+
+            img {
+                width: toRem(100);
+                height: toRem(60);
+                object-fit: cover;
+
+                @include bp-tablet {
+                    height: auto;
+                }
+            }
+        }
+
+        .see-sidebar-text {}
+    }
+}
+
+.badge {
+    position: absolute;
+    top: 7%;
+    left: 0;
+    right: 0;
+    padding: 0;
+    display: table;
+    z-index: 20;
+    pointer-events: none;
+    height: 10%;
+    width: 20%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+    @include bp-mobile {
+        width: 15% !important;
+    }
+
+    @include bp-tablet {
+        width: 10%;
+    }
+
+    .badge-inner {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        background-color: $c-50b848;
+        line-height: .85;
+        color: #fff;
+        font-weight: bolder;
+        white-space: nowrap;
+        -webkit-transition: background-color .3s, color .3s, border .3s;
+        -o-transition: background-color .3s, color .3s, border .3s;
+        transition: background-color .3s, color .3s, border .3s;
+        padding: toRem(12);
+
+        .post-date-day {
+            font-size: toRem(20);
+            font-weight: 700;
+            margin-bottom: toRem(6);
+        }
+
+        .post-date-month {
+            font-size: toRem(14);
+            font-weight: 700;
+        }
+
+    }
+}

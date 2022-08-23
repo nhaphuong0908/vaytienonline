@@ -1,0 +1,453 @@
+.about-heading {
+    position: relative;
+
+    .about-headin-img {
+        position: relative;
+        padding-top: 40%;
+        overflow: hidden;
+
+        @include bp-mobile {
+            padding-top: 48%;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: 0;
+            background: black;
+            opacity: 0.25;
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .about-content {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        transform: translateY(-50%);
+        text-align: center;
+
+        @include bp-mobile {
+
+            .about-title {
+                font-size: toRem(8);
+                font-weight: 700;
+                color: $c-ffffff;
+                margin: toRem(13) 0;
+            }
+
+            .about-text {
+                font-size: toRem(4);
+                font-weight: 500;
+                color: $c-ffffff;
+                margin: toRem(22) 0;
+            }
+        }
+
+        .about-title {
+            font-size: toRem(58);
+            font-weight: 700;
+            color: $c-ffffff;
+            margin: toRem(13) 0;
+        }
+
+        .about-text {
+            font-size: toRem(24);
+            font-weight: 500;
+            color: $c-ffffff;
+            margin: toRem(22) 0;
+        }
+    }
+}
+
+.about-prose {
+    .about-prose-wrap {
+        padding: toRem(36) 0 toRem(14);
+        text-align: center;
+
+        .about-prose-item {
+            font-size: toRem(24);
+            margin-bottom: toRem(50);
+            color: $c-0A0A0A;
+            font-weight: 400;
+
+            span {
+                font-weight: 700;
+            }
+
+            a {
+                color: #4e657b;
+            }
+        }
+    }
+}
+
+.about-banner {
+    position: relative;
+    overflow: hidden;
+
+    .about-banner-img {
+        background-image: url('./../../assets/images/shop/banner.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        overflow: hidden;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: 0;
+            background: $c-ffffff;
+            opacity: 0.3;
+        }
+    }
+
+    .about-banner-content {
+        padding: toRem(30) 0 toRem(40);
+        z-index: 2222;
+        position: relative;
+
+        .about-banner-title {
+            text-align: center;
+            font-size: toRem(40);
+            font-weight: 700;
+            margin-bottom: toRem(20);
+            color: $c-0A0A0A;
+        }
+
+        .about-banner-text {
+            text-align: center;
+            font-size: toRem(22);
+            margin-bottom: toRem(20);
+            color: $c-0A0A0A;
+            font-weight: 400;
+        }
+
+        .about-banner-unit {
+
+            .banner-unit-item {
+                padding: 0 toRem(20) toRem(33);
+
+                .unit-item-name {
+                    background-color: $c-50b848;
+                    text-align: center;
+                    color: $c-ffffff;
+                    font-size: toRem(20);
+                    font-weight: 700;
+                    padding: toRem(10) 0;
+                    margin-bottom: toRem(20);
+                }
+
+                .unit-iten-text {
+                    font-size: toRem(22);
+                    margin-bottom: toRem(20);
+                    color: $c-0A0A0A;
+                    font-weight: 400;
+
+                    span {
+                        color: $c-ff0000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.about-partner {
+    padding: toRem(30) 0 toRem(60);
+
+    .about-partner-content {
+        position: relative;
+        padding: 0 0 toRem(20);
+
+        &::after {
+            content: "";
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 3px;
+            width: 6%;
+            background-color: #d1dce1;
+            margin: 0 auto;
+            position: absolute;
+
+            @include bp-mobile {
+                width: 12%;
+            }
+        }
+
+        .about-partner-heading {
+            text-align: center;
+            font-size: toRem(30);
+            font-weight: 700;
+            margin-bottom: toRem(8);
+            color: $c-0A0A0A;
+        }
+
+        .about-partner-text {
+            font-size: toRem(22);
+            margin-bottom: toRem(10);
+            color: $c-0A0A0A;
+            font-weight: 400;
+            text-align: center;
+
+        }
+    }
+
+    .about-partner-list {
+        margin: toRem(30) 0;
+    }
+}
+
+.about-press {
+    padding: toRem(30) 0;
+    background-color: #f2f2f3;
+
+    .about-press-wrap {
+        .about-press-heading {
+            text-align: center;
+            font-size: toRem(30);
+            font-weight: 700;
+            margin-bottom: toRem(40);
+            color: $c-0A0A0A;
+            position: relative;
+            padding: 0 0 toRem(20);
+
+            &::after {
+                content: "";
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: 3px;
+                width: 6%;
+                background-color: #d1dce1;
+                margin: 0 auto;
+                position: absolute;
+
+                @include bp-mobile {
+                    width: 12%;
+                }
+            }
+        }
+
+        .about-press-list {
+            margin: toRem(30) 0;
+
+            .about-press-item {
+                overflow: hidden;
+                cursor: grab;
+
+                &:hover {
+                    img {
+                        transform: scale(1.2);
+                    }
+                }
+
+                img {
+                    transition: transform .15s ease-in;
+                }
+            }
+        }
+    }
+}
+
+.about-connect {
+    padding: toRem(30) 0 toRem(60);
+
+    .about-connect-wrap {
+        .about-press-heading {
+            position: relative;
+            padding: 0 0 toRem(20);
+            text-align: center;
+            font-size: toRem(30);
+            font-weight: 700;
+            margin-bottom: toRem(60);
+            color: $c-0A0A0A;
+
+            &::after {
+                content: "";
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: 3px;
+                width: 6%;
+                background-color: #d1dce1;
+                margin: 0 auto;
+                position: absolute;
+
+                @include bp-mobile {
+                    width: 12%;
+                }
+            }
+        }
+
+        @include bp-mobile {
+
+            iframe {
+                height: toRem(450);
+            }
+        }
+
+        .about-connect-inner {
+            padding-bottom: toRem(30);
+
+            .about-connect-content {
+                padding: 0 toRem(17) 31%;
+
+                @include bp-mobile {
+                    padding: 0;
+
+                    iframe {
+                        height: toRem(450);
+                    }
+                }
+
+                .about-connect-title {
+                    font-size: toRem(37);
+                    font-weight: 700;
+                    margin-bottom: toRem(12);
+                }
+
+                .about-connect-list {
+                    padding-top: toRem(12);
+
+                    .about-connect-item {
+                        margin-bottom: toRem(26);
+
+
+                        i {
+                            font-size: toRem(22);
+                            margin-right: toRem(10);
+                        }
+
+                        .about-connect-desc {
+                            font-size: toRem(21);
+                            font-weight: 400;
+                            line-height: toRem(22);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.about-client {
+    padding: toRem(30) 0 toRem(70);
+    background-color: #f2f2f3;
+
+
+
+    .client-header {
+        text-align: center;
+        font-size: toRem(30);
+        font-weight: 700;
+        margin-bottom: toRem(40);
+        color: $c-0A0A0A;
+        position: relative;
+        padding: 0 0 toRem(20);
+
+        &::after {
+            content: "";
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 3px;
+            width: 6%;
+            background-color: #d1dce1;
+            margin: 0 auto;
+            position: absolute;
+        }
+    }
+
+    .about-client-item-warp {
+        padding: toRem(40) toRem(20);
+        text-align: center;
+        overflow: hidden;
+        background: $c-ffffff;
+        cursor: grab;
+
+        &:hover {
+            box-shadow: -1px 7px 7px 2px rgba(176, 166, 166, 0.75);
+            -webkit-box-shadow: -1px 7px 7px 2px rgba(176, 166, 166, 0.75);
+            -moz-box-shadow: -1px 7px 7px 2px rgba(176, 166, 166, 0.75);
+        }
+
+        @include bp-mobile {
+            padding: toRem(60) toRem(40);
+
+            .about-client-item-infor {
+                justify-content: center;
+            }
+        }
+
+        .about-client-item-img {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: toRem(10);
+
+            img {
+                width: 120px;
+                border-radius: 50%;
+                height: 120px;
+                object-fit: contain;
+
+            }
+        }
+
+        .about-client-item-content {
+
+
+            .about-client-item-icon {
+                margin-bottom: toRem(10);
+
+                & i {
+                    color: $c-d26e4b;
+                }
+            }
+
+            .about-client-item-text {
+                font-size: toRem(21);
+                color: $c-0A0A0A;
+                font-style: italic;
+                font-weight: 400;
+                margin-bottom: 15px;
+                text-align: center;
+            }
+
+            .about-client-item-infor {
+                font-size: toRem(21);
+                color: $c-0A0A0A;
+                font-weight: 400;
+
+                .about-client-item-infor-name {
+                    font-weight: 700;
+                    margin-right: 4px;
+                }
+
+                .about-client-item-infor-icon {
+                    margin-right: 4px;
+                }
+            }
+        }
+    }
+
+}

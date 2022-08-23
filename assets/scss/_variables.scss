@@ -1,0 +1,33 @@
+$w-design: 1920; // width chuẩn design
+$container-gutter-width: 250; // padding ngoài container
+$grid-gutter-width: 25; // padding giữa 2 cột
+$mobile-grid-gutter-width: 30; // padding giữa 2 cột mobile
+$w-container: (
+    $w-design)-($container-gutter-width)*2+$grid-gutter-width; // width đã trừ spacing 2 bên
+$d-fs: 18;
+$c-f7f7f7: #f7f7f7;
+$c-999999: #999999;
+$c-D6D6D6: #D6D6D6;
+$c-313131: #313131;
+$c-50b848: #50b848;
+$c-ffffff: #ffffff;
+$c-666666: #666666;
+$c-000000: #000000;
+$c-cfcfcf: #cfcfcf;
+$c-e9f5fb: #e9f5fb;
+$c-f0f0f0: #F0F0F0;
+$c-fafafa: #fafafa;
+$c-727272: #727272;
+$c-0A0A0A: #0A0A0A;
+$c-e6e6e6: #e6e6e6;
+$c-eb6532: #eb6532;
+$c-253a80: #253a80;
+$c-000080: #000080;
+$c-40933a: #40933a;
+$c-d26e4b: #d26e4b;
+$c-d1dce1: #d1dce1;
+$c-ff0000: #ff0000;
+$re-sm: 575.98;
+$re-md: 767.98;
+$re-lg: 991.98;
+$re-xl: 1199.98;

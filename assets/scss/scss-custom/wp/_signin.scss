@@ -1,0 +1,67 @@
+.singin {
+    @include padding(230, 0, 190, 0);
+    .singin-wrap {
+        box-shadow: 0px 3px 6px #00000029;
+        background: white;
+        @include padding(80, 140, 80, 140);
+        @include bp-mobile {
+            @include padding(80, 20, 80, 20);
+        }
+        .signin-content {
+            form {
+                .form-group {
+                    input {
+                        width: 100%;
+                        background: $c-fafafa;
+                        &::placeholder {
+                            letter-spacing: 0.36px;
+                            color: $c-727272;
+                            font-weight: 500;
+                        }
+                    }
+                }
+                .form-checkbox {
+                    input {
+                        margin: 0;
+                        width: toRem(18);
+                        height: toRem(19);
+                        background: #707070;
+                        margin-top: toRem(5);
+                    }
+                    label {
+                        margin: 0;
+                        padding-left: toRem(11);
+                        letter-spacing: 0.36px;
+                        color: #313131;
+                        font-weight: 400;
+                        a {
+                            color: #192160;
+                            font-weight: 500;
+                        }
+                    }
+                }
+                .forgot-password {
+                    a {
+                        letter-spacing: 0.36px;
+                        color: #313131;
+                        font-weight: 600;
+                    }
+                }
+                .dont-account {
+                    letter-spacing: 0.36px;
+                    color: #313131;
+                    font-weight: 400;
+                    text-align: center;
+                    a {
+                        font-weight: 600;
+                        color: #313131;
+                    }
+                }
+            }
+        }
+        .singin-image {
+            max-width: toRem(263);
+            display: inline-block;
+        }
+    }
+}
